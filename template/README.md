@@ -73,6 +73,11 @@ HELLO_WORLD_STORAGE = {
     }
 ```
 
+Add/append "HelloWorld" service type in 'utils/kubesat/services.py' in the "ServiceTypes" class
+```
+HelloWorld = "helloworld"
+```
+
 We can use the same "run.py", only change the line "from template_service import simulation" to "from hello_world_service import simulation"
 
 In order to test this service you can execute the "run.py" with the respective arguments.
